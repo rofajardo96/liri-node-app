@@ -46,7 +46,7 @@ switch (command) {
     default:
         console.log('Try again');
 };
-// concertThis function
+// concertThis function using get method
 function concertThis(artist){
     axios.get("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp")
     .then(function (response) {
@@ -55,6 +55,7 @@ function concertThis(artist){
       var eventDate = moment(response.data[0].datetime).format('MM/DD/YYYY');
       console.log("Date of the Event:", eventDate);
     })
+    // using catch to display error message if above block does not work and gives an error
     .catch(function (error) {
       console.log(error);
     });
