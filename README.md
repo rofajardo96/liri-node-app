@@ -8,6 +8,8 @@ By inputting one of three different commands: spotify-this-song, movie-this, and
 
 This app works through the use of the aforementioned API's as well as the use of axios and moment. By integrating these different technologies through javascript, the Liri app is capable of getting information and displaying it to the user in a simple and easy to read way. 
 
+To run the app, you must open terminal, make sure that you are in the right directory, type in node followed by the name of the respective javascript file - in this case it is liri.js - and then any one of the previously listed commands and a relevant input. 
+
 Here below are some examples of how the app functions within terminal:
 ![](images/liri1.png)
 
