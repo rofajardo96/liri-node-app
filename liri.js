@@ -1,7 +1,4 @@
-// const dotenv = require("dotenv").config();
-// var Spotify = require('node-spotify-api');
-// var spotify = new Spotify(keys.spotify);
-// const keys = require('./keys.js');
+
 require("dotenv").config();
 var keys = require("./keys.js");
 var Spotify = require('node-spotify-api');
@@ -63,6 +60,7 @@ function concertThis(artist){
 // spotify function to get song information
 function spotifyThis(song){
     spotify.search({ type: 'track', query: song, limit: 1}, function(error, data){
+        // using loop similar to project 1 to access data and then storing into variable 
         if(!error){
         for(var i = 0; i < data.tracks.items.length; i++){
             var songData = data.tracks.items[i];
