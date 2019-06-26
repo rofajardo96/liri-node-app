@@ -9,4 +9,8 @@ By inputting one of three different commands: spotify-this-song, movie-this, and
 This app works through the use of the aforementioned API's as well as the use of axios and moment. By integrating these different technologies through javascript, the Liri app is capable of getting information and displaying it to the user in a simple and easy to read way. 
 
 Here below are some examples of how the app functions within terminal:
+![](images/liri1.png)
 
+The app also has default responses for the 'spotify-this-song' and 'movie-this' commands that will show up when the user doesn't input anything after those given commands:
+
+![](images/liri2.png)
